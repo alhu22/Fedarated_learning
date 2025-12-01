@@ -1,4 +1,4 @@
-"""my-awesome-app: A Flower / PyTorch app."""
+"""Fed: A Flower / PyTorch app."""
 
 import json
 from typing import List, Tuple
@@ -8,8 +8,8 @@ from flwr.common import Context, Metrics, ndarrays_to_parameters
 from flwr.server import ServerApp, ServerAppComponents, ServerConfig
 from torch.utils.data import DataLoader
 
-from my_awesome_app.my_strategy import CustomFedAvg
-from my_awesome_app.task import Net, get_transforms, get_weights, set_weights, test
+from Fed.my_strategy import CustomFedAvg
+from Fed.task import Net, get_transforms, get_weights, set_weights, test
 
 
 def get_evaluate_fn(testloader, device):

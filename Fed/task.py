@@ -1,4 +1,4 @@
-"""my-awesome-app task module adapted for CIFAR-10."""
+"""Fed task module adapted for CIFAR-10."""
 
 from collections import OrderedDict
 
