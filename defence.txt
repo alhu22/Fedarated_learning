@@ -1,0 +1,23 @@
+malicious clients:
+
+Median or Trimmed Mean
+
+Trimmed Mean: Remove the largest and smallest values of each weight dimension across clients, then average.
+
+Median: Take the median of each weight dimension.
+
+Resistant to extreme values from poisoned clients.
+
+Krum / Multi-Krum
+
+Krum: Selects a single client update closest to other updates.
+
+Multi-Krum: Selects several updates with the closest neighbors.
+
+Works well if less than 50% of clients are malicious.
+
+Bulyan
+
+Combination of Krum and trimmed mean.
+
+Provides stronger robustness against high-magnitude malicious updates.
